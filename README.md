@@ -1,15 +1,18 @@
+Using a K-means clustering machine learning model to determine the likelihood that an unknown client will subscribe to their product using the predictive model derived using the data from Portuguese Banking Institute found on the UCI Machine Learning Repository. 
+
 **Bank Marketing Clustering Classification**
 
 
 **1. Introduction**
 
-For this report I have chosen the Bank Marketing dataset which goes over the data accumulated by a
+For this report I have chosen the Bank Marketing dataset which goes over the data accumulated by a 
 Portuguese banking institution to determine whether a client is subscribed to their product (bank term
 deposit) or not. This data can be obtained from the UCI Machine Learning Repository. In this dataset,
 there are 16 relevant attributes (age, job, education, etc.) that will be used in classifying each client
 under the group of “subscribed” or “not subscribed”. The goal is to choose an appropriate clustering
 method that is able to accurately predict the result of whether an unknown client is subscribed (or going
 to subscribe) to the term deposit based off their given attributes.
+
 I decided on using this dataset because it has plenty of instances, which would ensure that my
 clustering would be more robust as it would have plenty of data points to reference. Additionally, the
 dataset has a lot of categorical and binary attributes, as well as unknown values – which would allow
@@ -27,6 +30,7 @@ point a category and repeating the process until the centroid no longer changes.
 visual representation of the process of K-means clustering on a dataset where we want 3 distinct
 classes. Likewise, in my dataset I will be using K-means clustering with 2 distinct classes (K=2), to
 help predict the clients that have subscribed vs have not subscribed.
+
 In addition, I will also need to pre-process the data so that it can be interpreted and analyzed to create
 clusters. This includes changing all categorical attributes to numerical attributes using different
 encoding methods and removing any instances with unknown values. To change the categorical
@@ -34,6 +38,7 @@ attributes into numerical attributes, I used binary encoding to represent the at
 and loan) that had only two values (yes or no). In this case, I encoded the value “yes” to equal 1, and
 “no” to equal 0. Otherwise, for the remaining categorical attributes I used the one-hot method (Diagram
 2) to represent their values in a numerical manner.
+
 To evaluate the result of the clusters, I will compared the classifications that are attributed to each of
 the data points based off the clustering with the actual classification of the data points. The criteria that
 I will use to evaluate these clusterings will be accuracy, precision, recall, f1-score, and the sum ofsquare differences between the data points and the centroid. These values should be able to give a good
