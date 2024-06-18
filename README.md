@@ -1,5 +1,3 @@
-Using a K-means clustering machine learning model to determine the likelihood that an unknown client will subscribe to their product using the predictive model derived using the data from Portuguese Banking Institute found on the UCI Machine Learning Repository. 
-
 **Bank Marketing Clustering Classification**
 
 
